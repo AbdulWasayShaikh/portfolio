@@ -2,37 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- This site is hosted on Netlify. Anyone can build and deploy a site
-     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=c392cf95-ecfd-4b91-9e9f-230ee5f60909
-     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
-<meta name="hosting-provider" content="Netlify">
-<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=c392cf95-ecfd-4b91-9e9f-230ee5f60909">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abdul Wasay Shaikh, web designer and developer in Karachi</title>
-<meta name="description" content="I design and build cinematic websites in Karachi. Plain, fast, finished in three to five days. From PKR 25,000.">
+<title>Abdul Wasay Shaikh | Web designer and developer, Karachi</title>
+<meta name="description" content="I design and build fast, cinematic websites that turn visitors into customers. Business sites, restaurant ordering, clinics, product launches and redesigns.">
 <meta name="theme-color" content="#0A0D13">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='10' width='17' height='13' fill='none' stroke='%2363C8DA' stroke-width='2'/%3E%3Cpath d='M21 10 L28 5 L28 18 L21 23 M4 10 L11 5 L28 5' fill='none' stroke='%2363C8DA' stroke-width='2' opacity='.55'/%3E%3C/svg%3E">
 <!-- og:image must stay an absolute URL: scrapers do not resolve relative paths -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Abdul Wasay Shaikh, web designer and developer in Karachi">
-<meta property="og:description" content="Cinematic websites, designed and built in three to five days. From PKR 25,000.">
+<meta property="og:title" content="Abdul Wasay Shaikh | Websites that turn visitors into customers">
+<meta property="og:description" content="Fast, cinematic websites for businesses. Designed, built, tested and launched by one person.">
 <meta property="og:url" content="https://abdul-wasay-shaikh.netlify.app/">
 <meta property="og:image" content="https://abdul-wasay-shaikh.netlify.app/assets/hero-ending.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
 <style>
 /* ============================== tokens ============================== */
 :root{
   --canvas:#0A0D13;
   --canvas-2:#0E131B;
   --panel:#131A24;
+  --panel-2:#17202C;
   --line:#1E2836;
   --line-strong:#55708A;
   --accent:#63C8DA;
   --accent-hover:#8FDDEC;
   --accent-muted:rgba(99,200,218,.20);
-  --text-secondary:#93A2B2;
+  --text-secondary:#A3B1BF;
   --text-primary:#E6EDF3;
 
   --display:"Bricolage Grotesque",system-ui,sans-serif;
@@ -53,7 +49,7 @@ body{
   font-family:var(--body);font-size:clamp(16px,1.05vw,18px);line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:-.02em;margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.04;letter-spacing:-.02em;margin:0;text-wrap:balance}
 p{margin:0}
 a{color:inherit}
 img{max-width:100%;display:block}
@@ -64,62 +60,38 @@ img{max-width:100%;display:block}
 .skip:focus{left:0}
 
 .wrap{width:min(1240px,100% - var(--pad)*2);margin-inline:auto}
-.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
   color:var(--text-secondary);display:inline-flex;align-items:center;gap:10px}
-.kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);
-  box-shadow:0 0 0 0 var(--accent-muted);flex:none}
-.on-screen .kicker::before{animation:pip 5s var(--ease-soft) -1.2s infinite}
-@keyframes pip{0%,100%{opacity:.55;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
-
-/* ============================== one environment ============================== */
-.env{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-.env::before{
-  content:"";position:absolute;inset:-12%;
-  background:
-    linear-gradient(rgba(99,200,218,.045) 1px,transparent 1px) 0 0/74px 74px,
-    linear-gradient(90deg,rgba(99,200,218,.045) 1px,transparent 1px) 0 0/74px 74px;
-  mask-image:radial-gradient(ellipse 90% 70% at 50% 30%,#000 10%,transparent 78%);
-  -webkit-mask-image:radial-gradient(ellipse 90% 70% at 50% 30%,#000 10%,transparent 78%);
-}
-.env::after{
-  content:"";position:absolute;inset:-25%;
-  background:
-    radial-gradient(1.6px 1.6px at 18% 28%,rgba(190,225,235,.5),transparent),
-    radial-gradient(1.4px 1.4px at 72% 62%,rgba(190,225,235,.42),transparent),
-    radial-gradient(1.2px 1.2px at 44% 84%,rgba(190,225,235,.35),transparent),
-    radial-gradient(1.6px 1.6px at 88% 16%,rgba(190,225,235,.4),transparent),
-    radial-gradient(1.3px 1.3px at 30% 66%,rgba(190,225,235,.3),transparent),
-    radial-gradient(1200px 800px at 70% 8%,rgba(99,200,218,.055),transparent 70%);
-  animation:drift 96s linear -22s infinite;
-}
-@keyframes drift{0%{transform:translate3d(0,0,0)}50%{transform:translate3d(-2.5%,-3.5%,0)}100%{transform:translate3d(0,0,0)}}
+.kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
 
 /* ============================== nav ============================== */
 nav{position:fixed;top:0;left:0;right:0;z-index:40;
-  display:flex;align-items:center;gap:20px;padding:14px var(--pad);
-  background:linear-gradient(rgba(10,13,19,.86),rgba(10,13,19,.4) 70%,transparent);
+  display:flex;align-items:center;gap:20px;padding:12px var(--pad);
+  background:linear-gradient(rgba(10,13,19,.9),rgba(10,13,19,.5) 70%,transparent);
   backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--display);
-  font-weight:600;font-size:15px;letter-spacing:-.01em;white-space:nowrap}
+  font-weight:600;font-size:15px;letter-spacing:-.01em;white-space:nowrap;min-height:44px;min-width:44px}
 .brand svg{width:26px;height:26px;flex:none}
-.navlinks{margin-left:auto;display:flex;align-items:baseline;gap:26px}
-.navlinks a{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--text-secondary);text-decoration:none;transition:color .3s var(--ease)}
+.navlinks{margin-left:auto;display:flex;align-items:center;gap:6px}
+.navlinks a{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-secondary);text-decoration:none;transition:color .3s var(--ease);
+  padding:12px 12px;min-height:44px;display:inline-flex;align-items:center}
 .navlinks a:hover{color:var(--text-primary)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;
+  font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;
   padding:12px 20px;border-radius:6px;text-decoration:none;border:1px solid transparent;
-  transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease),transform .3s var(--ease);
+  transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease);
   text-shadow:none;cursor:pointer}
 .btn-primary{background:var(--accent);color:#04222A;font-weight:500}
 .btn-primary:hover{background:var(--accent-hover);transform:translateY(-1px)}
 .btn-ghost{border-color:var(--line-strong);color:var(--text-primary);background:transparent}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
-@media (pointer:coarse){.btn{min-height:44px}}
-@media (max-width:860px){.navlinks{display:none}}
+nav .btn{margin-left:8px}
+@media (max-width:900px){.navlinks{display:none}nav .btn{margin-left:auto}}
+@media (max-width:420px){.brand span{display:none}}
 
 /* ============================== hero ============================== */
-.hero{position:relative;height:620vh;z-index:1}
+.hero{position:relative;height:560vh;z-index:1}
 .stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--canvas)}
 .poster{position:absolute;inset:0;background-size:cover;background-position:52% 50%;background-color:var(--canvas)}
 #hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 50%;
@@ -130,11 +102,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:40;
   background:radial-gradient(ellipse 120% 90% at 55% 45%,rgba(10,13,19,0) 32%,rgba(10,13,19,.66) 100%)}
 
 .band{position:absolute;left:var(--pad);top:50%;transform:translateY(-50%);
-  width:min(42ch,44vw);opacity:0;text-shadow:var(--tshadow);pointer-events:none}
-/* the caption column is always the left of frame, so the band scrim is a column vignette:
-   it dims the words' lane hard and dies out well before the building on the right */
-/* no negative z-index here: at opacity 1 the band stops being a stacking context and the
-   scrim would fall behind the video. The scrim paints first, the content is lifted above it. */
+  width:min(44ch,46vw);opacity:0;text-shadow:var(--tshadow);pointer-events:none}
 .band>*{position:relative}
 .band::before{content:"";position:absolute;top:-46vh;bottom:-46vh;
   left:calc(-1*var(--pad) - 40px);right:-45%;pointer-events:none;
@@ -142,36 +110,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:40;
   background:linear-gradient(90deg,
     rgba(4,6,11,.90) 0%,rgba(4,6,11,.86) 62%,rgba(4,6,11,.62) 82%,rgba(4,6,11,0) 100%)}
 .band .btn{text-shadow:none;pointer-events:auto}
-.band h1,.band h2{font-size:clamp(34px,5vw,68px)}
-.band .sub{margin-top:18px;color:var(--text-secondary);font-size:clamp(16px,1.35vw,20px);max-width:34ch}
+.band h1,.band h2{font-size:clamp(36px,5.2vw,72px);font-weight:800}
+.band .sub{margin-top:18px;color:var(--text-secondary);font-size:clamp(17px,1.35vw,21px);max-width:36ch}
 .band .kicker{margin-bottom:20px}
-.band .kicker::before{animation:none}
-
-/* the footage rests with the building right of centre, so the settle keeps the left column */
-.band.settle{width:min(40ch,44vw)}
-.band.settle::before{right:-50%}
-.band.settle .sub{max-width:32ch}
 .band.settle .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 
-/* split text */
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .vis{display:block;padding:.12em 0 .16em}
 .w{display:inline-block;white-space:pre}
 .c{display:inline-block;will-change:transform,opacity}
 
-/* (a) grid snap-align */
 .e-snap .c{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.6,1);opacity:var(--kc);
   transform:translateX(calc((1 - var(--kc))*var(--jx,0px)))}
-/* (g) approach from depth */
 .e-depth h2{--kc:clamp(0,var(--k,0)*1.9,1);opacity:var(--kc);display:block;
   transform:scale(calc(.84 + .16*var(--kc)));transform-origin:0 50%}
-/* (d) word punch with overshoot */
 .e-punch .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*3,1);
   --ks:clamp(0,(var(--k,0) - var(--th,0) - var(--sd,.1))*var(--ss,3.2),1);
   opacity:var(--kc);
   transform:scale(calc(.62 + (.38 + var(--ov,.12))*var(--kc) - var(--ov,.12)*var(--ks)))}
 .e-punch .w.em{--ov:.24;--sd:.16;--ss:2.6}
-/* (e) word by word rise into a staged settle */
 .e-rise .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.8,1);opacity:var(--kc);
   transform:translateY(calc((1 - var(--kc))*22px))}
 .e-rise .sub{opacity:clamp(0,(var(--k,0) - .62)*4,1);
@@ -183,7 +140,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:40;
   color:var(--accent);opacity:.85;transform:rotate(-90deg)}
 .ring circle{transition:stroke-dashoffset .2s linear}
 .cue{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;
+  font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
   color:var(--text-secondary);display:flex;flex-direction:column;align-items:center;gap:8px;
   text-shadow:var(--tshadow)}
 .cue span{width:1px;height:26px;background:linear-gradient(var(--accent),transparent);
@@ -191,199 +148,156 @@ nav{position:fixed;top:0;left:0;right:0;z-index:40;
 @keyframes cue{0%,100%{opacity:.3;transform:scaleY(.55);transform-origin:top}45%{opacity:1;transform:scaleY(1)}}
 @media (max-height:620px){.cue{display:none}}
 
-/* static hero */
-.static-hero{display:none;position:relative;min-height:88vh;align-items:flex-end;
+.static-hero{display:none;position:relative;min-height:92vh;align-items:flex-end;
   padding:120px var(--pad) 64px;background-size:cover;background-position:52% 50%;background-color:var(--canvas)}
 .static-hero::before{content:"";position:absolute;inset:0;
-  background:linear-gradient(rgba(10,13,19,.42),rgba(10,13,19,.62) 42%,rgba(10,13,19,.94))}
-.static-hero .inner{position:relative;width:min(30ch,100%)}
-.static-hero h1{font-size:clamp(36px,10vw,62px);margin:18px 0 0;text-shadow:var(--tshadow)}
-.static-hero .sub{margin:16px 0 26px;color:var(--text-secondary);max-width:32ch;text-shadow:var(--tshadow)}
+  background:linear-gradient(rgba(10,13,19,.42),rgba(10,13,19,.66) 42%,rgba(10,13,19,.96))}
+.static-hero .inner{position:relative;width:min(34ch,100%)}
+.static-hero h1{font-size:clamp(34px,9.4vw,60px);font-weight:800;margin:18px 0 0;text-shadow:var(--tshadow)}
+.static-hero .sub{margin:16px 0 26px;color:var(--text-secondary);max-width:34ch;text-shadow:var(--tshadow)}
+.static-hero .cta{display:flex;gap:12px;flex-wrap:wrap}
 
 /* ============================== sections ============================== */
 main{position:relative;z-index:1}
 section.blk{position:relative;padding:clamp(84px,11vh,140px) 0;background:var(--canvas)}
 section.alt{background:var(--canvas-2)}
-.head{display:grid;gap:22px;max-width:56ch}
-.head h2{font-size:clamp(30px,4.1vw,54px)}
-.lede{color:var(--text-secondary);font-size:clamp(16.5px,1.25vw,19px);max-width:58ch}
+.head{display:grid;gap:20px;max-width:60ch}
+.head h2{font-size:clamp(32px,4.4vw,58px)}
+.lede{color:var(--text-secondary);font-size:clamp(17px,1.3vw,20px);max-width:58ch}
 
-/* blueprint tick rule */
-.rule{width:100%;height:16px;overflow:visible;color:var(--line-strong);opacity:.5;margin-bottom:34px}
-.rule path{stroke:currentColor;fill:none;stroke-width:1;
-  stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.1s var(--ease)}
-.on .rule path{stroke-dashoffset:0}
-.on .rule path.t2{transition-delay:.14s}
-
-/* the resolve: signature element */
-.res{position:relative;overflow:hidden;border-radius:10px;background:#080B10;
-  border:1px solid var(--line);aspect-ratio:16/10}
-.res img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  opacity:0;transform:scale(1.035);transition:opacity 1s var(--ease) .55s,transform 1.4s var(--ease) .55s}
-.res .frame{position:absolute;inset:0;width:100%;height:100%;color:var(--accent);opacity:.75;
-  transition:opacity .8s var(--ease) 1.1s}
-.res .frame path,.res .frame rect,.res .frame line{stroke:currentColor;fill:none;stroke-width:1;
-  stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.15s var(--ease)}
-.res .frame .d1{transition-delay:.1s}
-.res .frame .d2{transition-delay:.22s}
-.res .frame .d3{transition-delay:.34s}
-.on .res .frame path,.on .res .frame rect,.on .res .frame line{stroke-dashoffset:0}
-.on .res img{opacity:1;transform:scale(1)}
-.on .res .frame{opacity:.12}
-.res.hold-open img{opacity:0}
-.on .res.hold-open img{opacity:0}
-.on .res.hold-open .frame{opacity:.6}
-.res .tag{position:absolute;left:12px;bottom:12px;z-index:2;
-  font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--accent);background:rgba(8,11,16,.62);border:1px solid var(--accent-muted);
-  border-radius:20px;padding:5px 11px;backdrop-filter:blur(8px)}
-
-/* entrances */
-.reveal .part{opacity:0;transform:translateY(20px);
-  transition:opacity .85s var(--ease),transform .85s var(--ease);
-  transition-delay:calc(var(--i,0)*90ms)}
-.reveal.on .part{opacity:1;transform:none}
+.js-on .reveal .part{opacity:0;transform:translateY(20px);
+  transition:opacity .8s var(--ease),transform .8s var(--ease);
+  transition-delay:calc(var(--i,0)*80ms)}
+.js-on .reveal.on .part{opacity:1;transform:none}
 .reveal.done .part{transition-delay:0s !important}
 
-/* S1 one person */
-.person{display:grid;grid-template-columns:1fr .82fr;gap:clamp(30px,5vw,74px);align-items:center}
-.person .copy{display:grid;gap:22px}
-.person .copy p{color:var(--text-secondary);max-width:46ch}
-.person .copy p.first{color:var(--text-primary);font-size:clamp(19px,1.7vw,25px);line-height:1.45;max-width:24ch}
-.person .res{aspect-ratio:4/5}
-@media (max-width:900px){.person{grid-template-columns:1fr}.person .res{aspect-ratio:4/3}}
+/* proof strip */
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:56px}
+.proof div{background:var(--panel);padding:26px 24px}
+.proof b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(26px,2.6vw,36px);letter-spacing:-.02em;line-height:1.1}
+.proof span{display:block;margin-top:8px;color:var(--text-secondary);font-size:15.5px;line-height:1.5}
+@media (max-width:900px){.proof{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.proof{grid-template-columns:1fr}}
 
-/* S2 work */
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,32px);margin-top:56px}
-@media (max-width:1040px){.grid3{grid-template-columns:1fr;max-width:640px}}
-.card{position:relative;display:grid;gap:16px}
-.card .meta{display:grid;gap:9px}
-.card h3{font-size:clamp(20px,1.7vw,25px);font-weight:600}
-.card p{color:var(--text-secondary);font-size:15.5px;line-height:1.6}
-.labels{display:flex;gap:7px;flex-wrap:wrap;margin-top:3px}
-.labels span{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--text-secondary);border:1px solid var(--line);border-radius:20px;padding:4px 9px}
-.card .res::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  box-shadow:inset 0 0 0 1px rgba(99,200,218,0);transition:box-shadow .45s var(--ease)}
-.card:hover .res::after{box-shadow:inset 0 0 0 1px var(--accent-muted)}
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,22px);margin-top:56px}
+@media (max-width:1000px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.services{grid-template-columns:1fr}}
+.svc{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:28px 26px;
+  display:grid;gap:12px;align-content:start;transition:border-color .3s var(--ease),transform .3s var(--ease)}
+.svc:hover{border-color:var(--accent-muted);transform:translateY(-2px)}
+.svc svg{width:30px;height:30px;color:var(--accent)}
+.svc h3{font-size:clamp(20px,1.6vw,24px);font-weight:600;line-height:1.2}
+.svc p{color:var(--text-secondary);font-size:16px;line-height:1.6}
 
-/* S3 hold */
-.holdwrap{display:grid;grid-template-columns:.86fr 1fr;gap:clamp(30px,5vw,72px);align-items:center}
-@media (max-width:940px){.holdwrap{grid-template-columns:1fr}}
-.mock{position:relative;border-radius:12px;border:1px solid var(--line);background:#080B10;
-  padding:16px;display:grid;grid-template-rows:auto 1fr auto auto auto auto;gap:13px;
-  aspect-ratio:16/11;overflow:hidden}
-.mock .bar{display:flex;gap:6px;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--line)}
-.mock .dot{width:7px;height:7px;border-radius:50%;background:var(--line-strong);opacity:.6}
-.piece{--kp:clamp(0,(var(--hold,0) - var(--tp,0))*3.4,1);
-  border:1px dashed rgba(99,200,218,.42);border-radius:6px;
-  position:relative;overflow:hidden}
-.piece::after{content:"";position:absolute;inset:0;opacity:var(--kp);
-  background:linear-gradient(160deg,#1E2A38,#151D28);border-radius:5px}
-.piece.p1{--tp:0}
-.piece.p2{height:11px;--tp:.22}
-.piece.p3{height:11px;width:72%;--tp:.34}
-.piece.p4{height:11px;width:52%;--tp:.44}
-.piece.p5{height:38px;width:150px;--tp:.62}
-.piece.p5::after{background:var(--accent);opacity:calc(var(--kp)*var(--kp))}
-.piece.p5 b{position:absolute;inset:0;z-index:2;display:grid;place-items:center;
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
-  color:#04222A;opacity:var(--kp);font-weight:500}
-.mock .sweep{position:absolute;left:0;right:0;top:calc(var(--hold,0)*100%);height:2px;
-  background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:calc(1 - var(--hold,0));
-  filter:blur(.4px)}
-.holdbtn{margin-top:26px;position:relative;display:inline-flex;align-items:center;gap:13px;
-  font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-  padding:15px 24px;border-radius:7px;border:1px solid var(--line-strong);background:transparent;
-  color:var(--text-primary);cursor:pointer;overflow:hidden;user-select:none;-webkit-user-select:none;
-  touch-action:none;min-height:44px;justify-self:start}
-.holdbtn::before{content:"";position:absolute;left:0;top:0;bottom:0;width:100%;
-  transform:scaleX(var(--hold,0));transform-origin:left;background:var(--accent-muted)}
-.holdbtn span{position:relative}
-.holdbtn:hover{border-color:var(--accent)}
-.holdwrap .copy{display:grid;gap:20px;align-content:start}
-.holdwrap .copy p{color:var(--text-secondary);max-width:44ch}
-.donenote{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--accent);opacity:0;transform:translateY(6px);
-  transition:opacity .6s var(--ease),transform .6s var(--ease)}
-.holdwrap.finished .donenote{opacity:1;transform:none}
+/* clients */
+.clients{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,28px);margin-top:56px}
+@media (max-width:860px){.clients{grid-template-columns:1fr}}
+.client{border:1px solid var(--line);border-radius:14px;background:linear-gradient(160deg,var(--panel-2),var(--panel));
+  padding:clamp(26px,3vw,40px);display:grid;gap:16px;align-content:start;position:relative;overflow:hidden}
+.client .top{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.client .mark{width:56px;height:56px;border-radius:12px;background:#F4F8FC;display:grid;place-items:center;flex:none}
+.client .mark img{width:38px;height:38px}
+.client .mark.dac{background:#050806;border:1px solid #1f5c3a;font-family:var(--display);font-weight:800;color:#E6EDF3;font-size:18px;letter-spacing:-.02em}
+.client h3{font-size:clamp(24px,2.2vw,32px)}
+.client .role{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+.client p{color:var(--text-secondary);font-size:16.5px}
+.client ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+.client li{position:relative;padding-left:22px;color:var(--text-primary);font-size:16px;line-height:1.55}
+.client li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;background:var(--accent)}
+.status{justify-self:start;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);border:1px solid var(--accent-muted);border-radius:20px;padding:6px 12px}
 
-/* S4 process */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,32px);margin-top:56px}
-@media (max-width:1040px){.steps{grid-template-columns:1fr;max-width:640px}}
-.step{display:grid;gap:16px}
-.step .num{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent)}
-.step h3{font-size:clamp(19px,1.55vw,23px);font-weight:600}
-.step p{color:var(--text-secondary);font-size:15.5px;line-height:1.62}
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,32px);margin-top:56px}
+@media (max-width:1040px){.projects{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.projects{grid-template-columns:1fr}}
+.card{position:relative;display:grid;grid-template-rows:auto 1fr;gap:16px;text-decoration:none;color:inherit}
+.shot{position:relative;overflow:hidden;border-radius:10px;background:#080B10;border:1px solid var(--line);aspect-ratio:16/10}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s var(--ease)}
+.card:hover .shot img{transform:scale(1.035)}
+.card:hover .shot{border-color:var(--accent-muted)}
+.card .meta{display:grid;gap:8px;align-content:start}
+.card h3{font-size:clamp(20px,1.7vw,25px);font-weight:600;display:flex;align-items:center;gap:8px}
+.card h3 svg{width:18px;height:18px;color:var(--accent);transition:transform .3s var(--ease)}
+.card:hover h3 svg{transform:translate(2px,-2px)}
+.card p{color:var(--text-secondary);font-size:16px;line-height:1.6}
+.labels{display:flex;gap:7px;flex-wrap:wrap;margin-top:4px}
+.labels span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-secondary);border:1px solid var(--line);border-radius:20px;padding:4px 10px}
 
-/* S5 speed */
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,22px);margin-top:52px}
-@media (max-width:820px){.tiles{grid-template-columns:1fr}}
-.tile{position:relative;border:1px solid var(--line);border-radius:10px;background:var(--panel);
-  padding:26px 24px 22px;overflow:hidden}
-.tile .v{font-family:var(--display);font-weight:700;font-size:clamp(34px,3.6vw,50px);
-  letter-spacing:-.03em;line-height:1}
-.tile .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--text-secondary);margin-top:12px}
-.tile::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
-  background:linear-gradient(90deg,transparent,var(--accent-muted),transparent)}
-.on-screen .tile::after{animation:scan 9s var(--ease-soft) -2s infinite}
-@keyframes scan{0%,100%{opacity:.25;transform:translateX(-30%)}50%{opacity:.9;transform:translateX(30%)}}
-.note{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--text-secondary);margin-top:20px}
+/* about */
+.person{display:grid;grid-template-columns:1fr .78fr;gap:clamp(30px,5vw,74px);align-items:center}
+.person .copy{display:grid;gap:20px}
+.person .copy p{color:var(--text-secondary);max-width:48ch}
+.person .copy p.first{color:var(--text-primary);font-size:clamp(20px,1.7vw,25px);line-height:1.45;max-width:28ch}
+.portrait{position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--line);aspect-ratio:4/5;background:#080B10}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.portrait .tag{position:absolute;left:12px;bottom:12px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);background:rgba(8,11,16,.72);border:1px solid var(--accent-muted);
+  border-radius:20px;padding:6px 12px}
+@media (max-width:900px){.person{grid-template-columns:1fr}.portrait{aspect-ratio:4/3;max-width:560px}}
 
-/* S6 price */
-.price{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:end}
-@media (max-width:880px){.price{grid-template-columns:1fr}}
-.price h2{font-size:clamp(38px,6vw,78px)}
-.price p{color:var(--text-secondary);max-width:44ch}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.8vw,22px);margin-top:56px;counter-reset:s}
+@media (max-width:1040px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--accent);padding-top:22px;display:grid;gap:12px;align-content:start}
+.step .num{font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--accent)}
+.step h3{font-size:clamp(19px,1.5vw,23px);font-weight:600}
+.step p{color:var(--text-secondary);font-size:16px;line-height:1.6}
 
-/* S7 questions */
+/* quality */
+.checks{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;margin-top:52px}
+@media (max-width:860px){.checks{grid-template-columns:1fr}}
+.checks div{background:var(--panel);padding:26px 24px;display:grid;gap:8px}
+.checks b{font-family:var(--display);font-weight:600;font-size:19px}
+.checks span{color:var(--text-secondary);font-size:16px;line-height:1.55}
+
+/* questions */
 .qa{margin-top:52px;border-top:1px solid var(--line)}
 .q{border-bottom:1px solid var(--line);padding:26px 0;display:grid;
   grid-template-columns:.9fr 1.1fr;gap:clamp(20px,4vw,56px);align-items:baseline}
 @media (max-width:880px){.q{grid-template-columns:1fr;gap:12px}}
-.q h3{font-family:var(--display);font-weight:600;font-size:clamp(18px,1.55vw,22px);line-height:1.25}
-.q p{color:var(--text-secondary);font-size:16px}
+.q h3{font-family:var(--display);font-weight:600;font-size:clamp(18px,1.55vw,22px);line-height:1.3}
+.q p{color:var(--text-secondary);font-size:16.5px}
 
-/* S8 cta */
+/* start */
 .cta-sec{position:relative;padding:clamp(90px,13vh,160px) 0}
-.form{display:grid;gap:14px;margin-top:38px;max-width:520px}
-.field{display:grid;gap:7px}
-.field label{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--text-secondary)}
-.field input,.field textarea{font-family:var(--body);font-size:16px;color:var(--text-primary);
-  background:var(--panel);border:1px solid var(--line-strong);border-radius:7px;padding:13px 15px;
-  transition:border-color .3s var(--ease)}
-.field textarea{min-height:104px;resize:vertical}
-.field input:focus,.field textarea:focus{border-color:var(--accent);outline:none}
-.form .btn-primary{margin-top:8px;justify-self:start;padding:15px 26px}
-.micro{font-size:14.5px;color:var(--text-secondary);margin-top:4px}
-.micro a{color:var(--accent);text-decoration-color:var(--accent-muted);text-underline-offset:3px}
 .ctagrid{display:grid;grid-template-columns:1fr .9fr;gap:clamp(30px,5vw,72px);align-items:start}
 @media (max-width:940px){.ctagrid{grid-template-columns:1fr}}
+.form{display:grid;gap:14px;margin-top:38px;max-width:540px}
+.field{display:grid;gap:7px}
+.field label{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+.field input,.field textarea,.field select{font-family:var(--body);font-size:16px;color:var(--text-primary);
+  background:var(--panel);border:1px solid var(--line-strong);border-radius:7px;padding:13px 15px;min-height:48px;
+  transition:border-color .3s var(--ease)}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent);outline:none}
+.form .btn-primary{margin-top:8px;justify-self:start;padding:15px 26px}
+.micro{font-size:15px;color:var(--text-secondary);margin-top:4px}
 .contactcard{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:28px;
-  display:grid;gap:18px;margin-top:38px}
-.contactcard .row{display:grid;gap:5px}
-.contactcard .row span{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--text-secondary)}
-.contactcard .row a{font-size:17px;text-decoration:none;color:var(--text-primary);
-  transition:color .3s var(--ease);word-break:break-word}
+  display:grid;gap:6px;margin-top:38px}
+.contactcard .row{display:grid;gap:2px;padding:10px 0;border-bottom:1px solid var(--line)}
+.contactcard .row:last-child{border-bottom:0}
+.contactcard .row span{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+.contactcard .row a,.contactcard .row p{font-size:17px;text-decoration:none;color:var(--text-primary);
+  transition:color .3s var(--ease);word-break:break-word;min-height:44px;display:flex;align-items:center}
 .contactcard .row a:hover{color:var(--accent)}
 
 /* footer */
-footer{position:relative;z-index:1;border-top:1px solid var(--line);background:var(--canvas);
-  padding:54px 0 44px}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);background:var(--canvas);padding:54px 0 44px}
 .foot{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:start}
 @media (max-width:760px){.foot{grid-template-columns:1fr}}
-.foot p,.foot a{color:var(--text-secondary);font-size:14.5px}
-.foot .name{font-family:var(--display);font-weight:600;font-size:17px;color:var(--text-primary)}
-.foot .links{display:flex;gap:20px;flex-wrap:wrap}
-.foot .links a{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
-  text-decoration:none;transition:color .3s var(--ease)}
+.foot p{color:var(--text-secondary);font-size:15px}
+.foot .name{font-family:var(--display);font-weight:600;font-size:18px;color:var(--text-primary)}
+.foot .links{display:flex;gap:6px 18px;flex-wrap:wrap}
+.foot .links a{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);
+  text-decoration:none;transition:color .3s var(--ease);min-height:44px;display:inline-flex;align-items:center}
 .foot .links a:hover{color:var(--accent)}
-.disclose{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);
-  color:var(--text-secondary);font-size:13.5px;max-width:74ch}
+.disclose{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);color:var(--text-secondary);font-size:14px;max-width:80ch}
 
 /* ============================== the five static-hero gates ============================== */
 @media (max-width:720px),
@@ -397,36 +311,35 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);background:v
   .static-hero{display:flex;background-image:url('assets/hero-ending.jpg')}
 }
 
-/* ============================== reduced motion ============================== */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important;transition:none !important;transition-delay:0s !important}
-  .reveal .part{opacity:1;transform:none}
-  .res img{opacity:1;transform:none}
-  .res .frame{opacity:.12}
-  .res.hold-open .frame{opacity:.6}
-  .rule path,.res .frame path,.res .frame rect,.res .frame line{stroke-dashoffset:0}
-  .band{transform:translateY(-50%)}
+  .js-on .reveal .part{opacity:1;transform:none}
 }
 body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused !important}
 </style>
+<script>
+/* content must never wait on a script: reveals only hide once JS has proven it runs, and a failsafe clears them */
+document.documentElement.classList.add('js-on');
+setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('on','done');});},3000);
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="env" aria-hidden="true"></div>
 
-<nav>
-  <a class="brand" href="#main">
+<nav aria-label="Main">
+  <a class="brand" href="#main" aria-label="Abdul Wasay Shaikh, home">
     <svg viewBox="0 0 32 32" aria-hidden="true">
       <rect x="4" y="10" width="17" height="13" fill="none" stroke="#63C8DA" stroke-width="1.6"/>
       <path d="M21 10 L28 5 L28 18 L21 23 M4 10 L11 5 L28 5" fill="none" stroke="#63C8DA" stroke-width="1.6" opacity=".5"/>
     </svg>
-    Abdul Wasay Shaikh
+    <span>Abdul Wasay Shaikh</span>
   </a>
   <div class="navlinks">
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
     <a href="#work">Work</a>
     <a href="#process">Process</a>
-    <a href="#price">Price</a>
-    <a href="#questions">Questions</a>
+    <a href="#questions">FAQ</a>
   </div>
   <a class="btn btn-primary" href="https://wa.me/923139216332" target="_blank" rel="noopener">WhatsApp me</a>
 </nav>
@@ -439,343 +352,300 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
       <div class="poster" aria-hidden="true"></div>
       <video id="hero" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video>
       <div class="scrim" aria-hidden="true"></div>
-
       <svg class="ring" viewBox="0 0 48 48" aria-hidden="true">
         <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-dasharray="126" style="stroke-dashoffset:var(--ld,126)"/>
       </svg>
 
       <div class="band e-snap" data-band="0,0.17" data-ramp="0.03">
-        <div class="kicker">Web designer and developer, Karachi</div>
+        <div class="kicker">Web designer &amp; developer · Karachi</div>
         <h1 data-split="char">Abdul Wasay Shaikh</h1>
       </div>
-
       <div class="band e-depth" data-band="0.21,0.41" data-ramp="0.05">
-        <h2 data-split="none">Most websites stop at the outline.</h2>
+        <h2 data-split="none">Your website has three seconds.</h2>
       </div>
-
       <div class="band e-punch" data-band="0.46,0.70" data-ramp="0.055">
-        <h2 data-split="word" data-em="all">I take yours all the way.</h2>
+        <h2 data-split="word" data-em="all">I build the kind that uses them.</h2>
       </div>
-
       <div class="band settle e-rise" data-band="0.74,1" data-ramp="0.12">
-        <h2 data-split="word">Finished, not almost.</h2>
-        <p class="sub">Cinematic websites, designed and built in three to five days.</p>
+        <h2 data-split="word">Websites that turn visitors into customers.</h2>
+        <p class="sub">Designed, built, tested on every screen and launched by one person.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#start">Start on WhatsApp</a>
+          <a class="btn btn-primary" href="#start">Get a quote</a>
           <a class="btn btn-ghost" href="#work">See the work</a>
         </div>
       </div>
-
       <div class="cue" aria-hidden="true"><span></span>Scroll</div>
     </div>
 
     <div class="static-hero">
       <div class="inner">
-        <div class="kicker">Web designer and developer, Karachi</div>
-        <h1>Finished, not almost.</h1>
-        <p class="sub">Abdul Wasay Shaikh builds cinematic websites in Karachi. Designed and built in three to five days.</p>
-        <a class="btn btn-primary" href="#start">Start on WhatsApp</a>
+        <div class="kicker">Web designer &amp; developer · Karachi</div>
+        <h1>Websites that turn visitors into customers.</h1>
+        <p class="sub">Abdul Wasay Shaikh designs, builds and launches fast, cinematic websites for businesses.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#start">Get a quote</a>
+          <a class="btn btn-ghost" href="#work">See the work</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================== S1 one person ============================== -->
+  <!-- ============================== proof ============================== -->
+  <section class="blk reveal" id="intro">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker part" style="--i:0">What you get</div>
+        <h2 class="part" style="--i:1">No templates. No page builders. No guesswork.</h2>
+        <p class="lede part" style="--i:2">Every site is designed from a system made for that one brand and written in custom code. It loads fast, looks like nobody else, and works on the phone your customer is holding.</p>
+      </div>
+      <div class="proof part" style="--i:3">
+        <div><b>One person</b><span>Design, copy, media, build and launch. The person you message writes the code.</span></div>
+        <div><b>Every screen</b><span>Tested on phone, tablet and desktop before it goes live.</span></div>
+        <div><b>One action</b><span>Every page built around the step you want: order, book or message.</span></div>
+        <div><b>Quote in 24h</b><span>Send the idea on WhatsApp and get a clear price and plan back.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== services ============================== -->
+  <section class="blk alt reveal" id="services">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker part" style="--i:0">Services</div>
+        <h2 class="part" style="--i:1">What I build for businesses.</h2>
+      </div>
+      <div class="services">
+        <article class="svc part" style="--i:2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
+          <h3>Business websites</h3>
+          <p>A cinematic site with scroll-driven video that makes your business look as good as it is, and a clear way to contact you.</p>
+        </article>
+        <article class="svc part" style="--i:3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v8a3 3 0 0 0 3 3v7M7 3v5M10 3v8a3 3 0 0 1-3 3M17 21V3c-2 1-3 4-3 8h3"/></svg>
+          <h3>Restaurant &amp; ordering sites</h3>
+          <p>Your full menu online, a cart, and orders sent straight to WhatsApp and email. No app, no commission.</p>
+        </article>
+        <article class="svc part" style="--i:4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          <h3>Clinic &amp; service sites</h3>
+          <p>Built around one action: book or message. Branch details, services and trust, with a WhatsApp button on every screen.</p>
+        </article>
+        <article class="svc part" style="--i:5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>
+          <h3>Product launch pages</h3>
+          <p>Launch pages with films and frame-by-frame scroll rendered from a 3D model, and a waitlist that captures buyers.</p>
+        </article>
+        <article class="svc part" style="--i:6">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.3L3 16M3 21v-5h5"/></svg>
+          <h3>Website redesigns</h3>
+          <p>Your old site is slow, dated or broken on phones. I rebuild it so it loads fast and actually brings in enquiries.</p>
+        </article>
+        <article class="svc part" style="--i:7">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 16l4-4 3 3 5-6"/><circle cx="18" cy="9" r="1"/></svg>
+          <h3>Landing pages &amp; care</h3>
+          <p>Single pages for ads and campaigns, plus ongoing changes after launch so the site keeps up with your business.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== clients ============================== -->
+  <section class="blk reveal" id="clients">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker part" style="--i:0">Client work</div>
+        <h2 class="part" style="--i:1">Trusted by businesses that sell for real.</h2>
+      </div>
+      <div class="clients">
+        <article class="client part" style="--i:2">
+          <div class="top">
+            <div class="mark dac" aria-hidden="true">DAC</div>
+            <div><h3>DAC</h3><div class="role">TikTok Shop growth agency</div></div>
+          </div>
+          <p>The agency's marketing site, built end to end: brief, design, build, testing and launch.</p>
+          <ul>
+            <li>Rebuilt the visual direction after client review into the black and dark-green, agency-first identity the client signed off on.</li>
+            <li>Every result on the page backed by the client's own verified seller dashboards.</li>
+          </ul>
+        </article>
+        <article class="client part" style="--i:3">
+          <div class="top">
+            <div class="mark"><img src="assets/dec-symbol.svg" alt="" width="38" height="38"></div>
+            <div><h3>Defence Eye Clinic</h3><div class="role">Optical &amp; eye-test clinic · Karachi</div></div>
+          </div>
+          <p>A clinical-premium website for a clinic with two branches.</p>
+          <ul>
+            <li>A scroll story that moves from blurred vision to sharp focus.</li>
+            <li>WhatsApp booking for each branch, and a new logo mark.</li>
+          </ul>
+          <span class="status">Launching soon</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== work ============================== -->
+  <section class="blk alt reveal" id="work">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker part" style="--i:0">Work</div>
+        <h2 class="part" style="--i:1">Live sites. Open any of them.</h2>
+        <p class="lede part" style="--i:2">Brand projects and concept builds across eyewear, luxury watches, restaurants, coffee and fitness. Each one is live, so open it on your phone and judge for yourself.</p>
+      </div>
+      <div class="projects">
+        <a class="card part" style="--i:3" href="https://lumen-meridian.netlify.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/work-lumen.jpg" alt="LUMEN Meridian sunglasses launch site" loading="lazy" decoding="async" width="1440" height="900"></div>
+          <div class="meta">
+            <h3>LUMEN Meridian <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+            <p>A sunglasses launch. The scroll journey is frames rendered from a 3D model, with separate sequences for phones.</p>
+            <div class="labels"><span>Launch page</span><span>3D render</span></div>
+          </div>
+        </a>
+        <a class="card part" style="--i:4" href="https://clinquant-boba-8ff46b.netlify.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/work-aurum.jpg" alt="Aurum and Noir luxury watch site" loading="lazy" decoding="async" width="1440" height="900"></div>
+          <div class="meta">
+            <h3>Aurum &amp; Noir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+            <p>A luxury watch release with a hand-drawn movement diagram and a private waitlist.</p>
+            <div class="labels"><span>Luxury</span><span>Product</span></div>
+          </div>
+        </a>
+        <a class="card part" style="--i:5" href="https://cartel-lounge.netlify.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/work-cartel.jpg" alt="Cartel Lounge restaurant site with ordering" loading="lazy" decoding="async" width="1440" height="900"></div>
+          <div class="meta">
+            <h3>Cartel Lounge <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+            <p>A restaurant concept with 140 menu items, a cart and orders that go straight to WhatsApp and email.</p>
+            <div class="labels"><span>Restaurant</span><span>Ordering</span></div>
+          </div>
+        </a>
+        <a class="card part" style="--i:6" href="https://otaq-restaurant.netlify.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/work-otaq.jpg" alt="Otaq Sindhi restaurant site" loading="lazy" decoding="async" width="1440" height="900"></div>
+          <div class="meta">
+            <h3>Otaq <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+            <p>A Sindhi restaurant concept with two kitchens, a buffet story and table booking.</p>
+            <div class="labels"><span>Restaurant</span><span>Booking</span></div>
+          </div>
+        </a>
+        <a class="card part" style="--i:7" href="https://ninth-day-coffee.netlify.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/work-ninthday.jpg" alt="Ninth Day coffee brand site" loading="lazy" decoding="async" width="1440" height="900"></div>
+          <div class="meta">
+            <h3>Ninth Day <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+            <p>A coffee subscription brand built on one idea: every bag has a clock. The kettle pours as you scroll.</p>
+            <div class="labels"><span>Brand</span><span>Subscription</span></div>
+          </div>
+        </a>
+        <a class="card part" style="--i:8" href="https://the-platform-karachi.netlify.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/work-platform.jpg" alt="The Platform gym site" loading="lazy" decoding="async" width="1440" height="900"></div>
+          <div class="meta">
+            <h3>The Platform <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+            <p>A 24-hour strength gym that sells the empty rack. The camera walks the floor as you scroll.</p>
+            <div class="labels"><span>Fitness</span><span>Lead capture</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== about ============================== -->
   <section class="blk reveal" id="about">
     <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M200 4 V12 M400 4 V12 M600 4 V12 M800 4 V12 M999 2 V14"/>
-      </svg>
       <div class="person">
         <div class="copy">
-          <div class="kicker part" style="--i:0">Who you are dealing with</div>
-          <h2 class="part" style="--i:1">One person. The whole site.</h2>
-          <p class="first part" style="--i:2">I design it and I build it.</p>
-          <p class="part" style="--i:3">There is no team to hand your project to, and nobody else to blame when it slips. The person you message is the person writing the code.</p>
-          <p class="part" style="--i:4">I work from Karachi and I answer within a few hours. Most sites are done in three to five days.</p>
+          <div class="kicker part" style="--i:0">Who you work with</div>
+          <h2 class="part" style="--i:1;font-size:clamp(32px,4.4vw,58px)">One person owns your whole site.</h2>
+          <p class="first part" style="--i:2">I design it, I write it, I build it and I launch it.</p>
+          <p class="part" style="--i:3">There is no agency handing your project down a chain. The person you message on WhatsApp is the person writing the code, so changes happen the same day, not next sprint.</p>
+          <p class="part" style="--i:4">I work from Karachi with businesses in Pakistan and abroad, and I study Software Engineering at Iqra University. I use an AI-assisted workflow with Claude Code to move fast, and I check every page by hand before it ships.</p>
         </div>
-        <div class="res part" style="--i:2">
-          <img src="assets/wasay.jpg" alt="Abdul Wasay Shaikh" loading="lazy" decoding="async">
-          <svg class="frame" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
-            <rect pathLength="1" x="30" y="34" width="340" height="432"/>
-            <path class="d1" pathLength="1" d="M30 140 H370 M30 250 H370 M30 360 H370"/>
-            <path class="d2" pathLength="1" d="M143 34 V466 M256 34 V466"/>
-            <path class="d3" pathLength="1" d="M30 34 L143 140 M370 466 L256 360"/>
-          </svg>
+        <div class="portrait part" style="--i:2">
+          <img src="assets/wasay.jpg" alt="Abdul Wasay Shaikh" loading="lazy" decoding="async" width="540" height="750">
           <div class="tag">Karachi</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================== S2 work ============================== -->
-  <section class="blk alt reveal" id="work">
-    <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M250 4 V12 M500 4 V12 M750 4 V12 M999 2 V14"/>
-      </svg>
-      <div class="head">
-        <div class="kicker part" style="--i:0">Work</div>
-        <h2 class="part" style="--i:1">Three sites. One standard.</h2>
-      </div>
-      <div class="grid3">
-        <article class="card part" style="--i:2">
-          <div class="res">
-            <img src="assets/work-ninth-day.jpg" alt="The Ninth Day coffee website, a kettle pouring over a dark scene" loading="lazy" decoding="async">
-            <svg class="frame" viewBox="0 0 400 250" preserveAspectRatio="none" aria-hidden="true">
-              <rect pathLength="1" x="22" y="20" width="356" height="210"/>
-              <path class="d1" pathLength="1" d="M22 76 H378 M22 132 H378 M22 188 H378"/>
-              <path class="d2" pathLength="1" d="M111 20 V230 M200 20 V230 M289 20 V230"/>
-              <path class="d3" pathLength="1" d="M22 20 L111 76 M378 230 L289 188"/>
-            </svg>
-          </div>
-          <div class="meta">
-            <h3>Ninth Day</h3>
-            <p>A coffee brand built on one idea: every bag has a clock. The kettle pours as you scroll.</p>
-            <div class="labels"><span>Brand</span><span>Site</span><span>Motion</span></div>
-          </div>
-        </article>
-
-        <article class="card part" style="--i:3">
-          <div class="res">
-            <img src="assets/work-platform.jpg" alt="The Platform gym website, a dark gym floor with open racks" loading="lazy" decoding="async">
-            <svg class="frame" viewBox="0 0 400 250" preserveAspectRatio="none" aria-hidden="true">
-              <rect pathLength="1" x="22" y="20" width="356" height="210"/>
-              <path class="d1" pathLength="1" d="M22 76 H378 M22 132 H378 M22 188 H378"/>
-              <path class="d2" pathLength="1" d="M111 20 V230 M200 20 V230 M289 20 V230"/>
-              <path class="d3" pathLength="1" d="M22 20 L111 76 M378 230 L289 188"/>
-            </svg>
-          </div>
-          <div class="meta">
-            <h3>The Platform</h3>
-            <p>A Karachi gym that sells the empty rack. The camera walks the floor as you scroll.</p>
-            <div class="labels"><span>Brand</span><span>Site</span><span>Motion</span></div>
-          </div>
-        </article>
-
-        <article class="card part" style="--i:4">
-          <div class="res">
-            <img src="assets/work-lintel.jpg" alt="The Lintel studio website, a stone beam resting on supports in a vaulted chamber" loading="lazy" decoding="async">
-            <svg class="frame" viewBox="0 0 400 250" preserveAspectRatio="none" aria-hidden="true">
-              <rect pathLength="1" x="22" y="20" width="356" height="210"/>
-              <path class="d1" pathLength="1" d="M22 76 H378 M22 132 H378 M22 188 H378"/>
-              <path class="d2" pathLength="1" d="M111 20 V230 M200 20 V230 M289 20 V230"/>
-              <path class="d3" pathLength="1" d="M22 20 L111 76 M378 230 L289 188"/>
-            </svg>
-          </div>
-          <div class="meta">
-            <h3>Lintel</h3>
-            <p>A design studio that sells the beam above the door. A stone slab lowers onto its supports as you scroll.</p>
-            <div class="labels"><span>Brand</span><span>Site</span><span>Motion</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================== S3 the idea ============================== -->
-  <section class="blk reveal" id="idea">
-    <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M333 4 V12 M666 4 V12 M999 2 V14"/>
-      </svg>
-      <div class="holdwrap">
-        <div class="mock part" style="--i:0" aria-hidden="true">
-          <div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
-          <div class="piece p1"></div>
-          <div class="piece p2"></div>
-          <div class="piece p3"></div>
-          <div class="piece p4"></div>
-          <div class="piece p5"><b>Get in touch</b></div>
-          <div class="sweep"></div>
-        </div>
-        <div class="copy">
-          <div class="kicker part" style="--i:1">The idea</div>
-          <h2 class="part" style="--i:2">Hold the button.</h2>
-          <p class="part" style="--i:3">This is the whole job in one gesture. Lines on the left, a finished section on the right. Hold it all the way and watch what finished actually means.</p>
-          <button class="holdbtn part" style="--i:4" id="holdbtn" type="button" aria-describedby="holdnote">
-            <span>Hold to finish</span>
-          </button>
-          <p class="donenote" id="holdnote">Finished. That is the difference.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================== S4 process ============================== -->
+  <!-- ============================== process ============================== -->
   <section class="blk alt reveal" id="process">
     <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M250 4 V12 M500 4 V12 M750 4 V12 M999 2 V14"/>
-      </svg>
       <div class="head">
-        <div class="kicker part" style="--i:0">How it works</div>
-        <h2 class="part" style="--i:1">Three to five days, outline to live.</h2>
+        <div class="kicker part" style="--i:0">Process</div>
+        <h2 class="part" style="--i:1">From a WhatsApp message to a live site.</h2>
       </div>
       <div class="steps">
-        <article class="step part" style="--i:2">
-          <div class="res">
-            <img src="assets/step-01.jpg" alt="A bare glowing wireframe box floating in the dark" loading="lazy" decoding="async">
-            <svg class="frame" viewBox="0 0 400 250" preserveAspectRatio="none" aria-hidden="true">
-              <rect pathLength="1" x="22" y="20" width="356" height="210"/>
-              <path class="d1" pathLength="1" d="M22 90 H378 M22 160 H378"/>
-              <path class="d2" pathLength="1" d="M140 20 V230 M260 20 V230"/>
-            </svg>
-          </div>
-          <div class="num">01</div>
-          <h3>You send the outline</h3>
-          <p>A few sentences about the business is enough. Photos if you have them, nothing if you do not.</p>
-        </article>
-        <article class="step part" style="--i:3">
-          <div class="res">
-            <img src="assets/step-02.jpg" alt="The same box half wireframe and half solid metal" loading="lazy" decoding="async">
-            <svg class="frame" viewBox="0 0 400 250" preserveAspectRatio="none" aria-hidden="true">
-              <rect pathLength="1" x="22" y="20" width="356" height="210"/>
-              <path class="d1" pathLength="1" d="M22 90 H378 M22 160 H378"/>
-              <path class="d2" pathLength="1" d="M140 20 V230 M260 20 V230"/>
-            </svg>
-          </div>
-          <div class="num">02</div>
-          <h3>I design and build it</h3>
-          <p>You get a link to the real site, not a picture of one. You say what to change in plain words and I change it.</p>
-        </article>
-        <article class="step part" style="--i:4">
-          <div class="res">
-            <img src="assets/step-03.jpg" alt="The box finished and solid, lit softly from within" loading="lazy" decoding="async">
-            <svg class="frame" viewBox="0 0 400 250" preserveAspectRatio="none" aria-hidden="true">
-              <rect pathLength="1" x="22" y="20" width="356" height="210"/>
-              <path class="d1" pathLength="1" d="M22 90 H378 M22 160 H378"/>
-              <path class="d2" pathLength="1" d="M140 20 V230 M260 20 V230"/>
-            </svg>
-          </div>
-          <div class="num">03</div>
-          <h3>It goes live</h3>
-          <p>On your own address, with the speed measured and the numbers handed to you.</p>
-        </article>
+        <article class="step part" style="--i:2"><div class="num">01</div><h3>You send the idea</h3><p>A few lines about the business and what you want people to do. Photos if you have them, nothing if you don't.</p></article>
+        <article class="step part" style="--i:3"><div class="num">02</div><h3>Price and plan</h3><p>Within 24 hours you get a clear price, what's included and a launch date. No hourly billing.</p></article>
+        <article class="step part" style="--i:4"><div class="num">03</div><h3>Design and build</h3><p>You get a link to the real site, not a picture of one. Tell me what to change in plain words.</p></article>
+        <article class="step part" style="--i:5"><div class="num">04</div><h3>Test and launch</h3><p>Checked on phone, tablet and desktop, then live on your own address with everything handed over.</p></article>
+      </div>
+      <div class="checks part" style="--i:6">
+        <div><b>Tested before launch</b><span>My own Chrome DevTools scripts check layout, text contrast, broken links and errors on three screen sizes.</span></div>
+        <div><b>Fast on mobile data</b><span>Phones get a lighter version on purpose. Heavy video never downloads on a phone.</span></div>
+        <div><b>Works for everyone</b><span>Keyboard navigation, readable contrast, reduced-motion support and tap targets sized for thumbs.</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================== S5 speed ============================== -->
-  <section class="blk reveal" id="speed">
-    <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M500 4 V12 M999 2 V14"/>
-      </svg>
-      <div class="head">
-        <div class="kicker part" style="--i:0">Speed</div>
-        <h2 class="part" style="--i:1">Pretty is easy. Fast is the hard part.</h2>
-        <p class="lede part" style="--i:2">These sites are plain HTML and CSS files. No framework, no build step, no server code, so there is nothing behind the scenes to go slow. The video streams in behind the picture, and phones never download it at all.</p>
-      </div>
-      <div class="tiles">
-        <div class="tile part" style="--i:3"><div class="v" data-stat="weight">measuring</div><div class="l">Page weight without the video</div></div>
-        <div class="tile part" style="--i:4"><div class="v" data-stat="load">measuring</div><div class="l">Load time on the live server</div></div>
-        <div class="tile part" style="--i:5"><div class="v" data-stat="video">measuring</div><div class="l">Video, streamed in behind the picture</div></div>
-      </div>
-      <p class="note part" style="--i:6">Measured on this page, on the live server. Not an estimate.</p>
-    </div>
-  </section>
-
-  <!-- ============================== S6 price ============================== -->
-  <section class="blk alt reveal" id="price">
-    <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M120 4 V12 M999 2 V14"/>
-      </svg>
-      <div class="price">
-        <div>
-          <div class="kicker part" style="--i:0">Price</div>
-          <h2 class="part" style="--i:1;margin-top:20px">PKR 25,000 to start.</h2>
-        </div>
-        <p class="part" style="--i:2">That covers the design, the writing, the build, and putting it live on your own address. Bigger sites cost more, and you get the number before anything starts. No hourly billing, no invoice you did not expect.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================== S7 questions ============================== -->
+  <!-- ============================== questions ============================== -->
   <section class="blk reveal" id="questions">
     <div class="wrap">
-      <svg class="rule" viewBox="0 0 1000 16" preserveAspectRatio="none" aria-hidden="true">
-        <path pathLength="1" d="M0 8 H1000"/>
-        <path class="t2" pathLength="1" d="M0 2 V14 M200 4 V12 M400 4 V12 M600 4 V12 M800 4 V12 M999 2 V14"/>
-      </svg>
       <div class="head">
-        <div class="kicker part" style="--i:0">Questions</div>
-        <h2 class="part" style="--i:1">The five things people ask me.</h2>
+        <div class="kicker part" style="--i:0">FAQ</div>
+        <h2 class="part" style="--i:1">What clients ask before they start.</h2>
       </div>
       <div class="qa">
-        <div class="q part" style="--i:2">
-          <h3>I have no photos and no logo. Can you still do it?</h3>
-          <p>Yes, and most people who message me have neither. The imagery on this page was generated with AI in a style chosen for the brand, and yours can be made the same way. When you have real photos later, I swap them in.</p>
-        </div>
-        <div class="q part" style="--i:3">
-          <h3>How do I know you will not go quiet on me?</h3>
-          <p>You have my WhatsApp, not a form that disappears into nowhere. I answer within a few hours. If I am booked, I say so on day one instead of leaving you waiting.</p>
-        </div>
-        <div class="q part" style="--i:4">
-          <h3>Who changes things after the site is live?</h3>
-          <p>I do. Send me a sentence and it is on the live site the same day. The first month of small changes is included.</p>
-        </div>
-        <div class="q part" style="--i:5">
-          <h3>Will it actually work on a phone?</h3>
-          <p>Yes, and phones get a lighter version on purpose. They never download the heavy video, so the page opens fast on mobile data.</p>
-        </div>
-        <div class="q part" style="--i:6">
-          <h3>You are new at this. Why should I hire you?</h3>
-          <p>Look at the work above and decide from that. I would rather be judged on finished sites than on a number of years.</p>
-        </div>
+        <div class="q part" style="--i:2"><h3>How much does a website cost?</h3><p>It depends on the pages and features. Send me what you need on WhatsApp and you get a fixed price within 24 hours, before anything starts.</p></div>
+        <div class="q part" style="--i:3"><h3>I have no photos and no logo. Can you still do it?</h3><p>Yes. I direct AI-generated imagery and video in a style chosen for your brand, and swap in real photos whenever you have them.</p></div>
+        <div class="q part" style="--i:4"><h3>Can customers order or book through the site?</h3><p>Yes. Orders and bookings can go straight to your WhatsApp and email, with a full menu and cart for restaurants.</p></div>
+        <div class="q part" style="--i:5"><h3>Will it work properly on phones?</h3><p>Every site is tested on phone, tablet and desktop before launch. Most of your customers will see it on a phone, so that is where I start.</p></div>
+        <div class="q part" style="--i:6"><h3>Who makes changes after launch?</h3><p>I do. Send a message and the change goes live, usually the same day.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================== S8 start ============================== -->
+  <!-- ============================== start ============================== -->
   <section class="blk alt cta-sec reveal" id="start">
     <div class="wrap">
       <div class="ctagrid">
         <div>
           <div class="kicker part" style="--i:0">Start</div>
-          <h2 class="part" style="--i:1">Send me the outline.</h2>
-          <p class="lede part" style="--i:2;margin-top:20px">Tell me what the business is and what you want people to do on the site. You get back a price and a date, not a sales call.</p>
+          <h2 class="part" style="--i:1;font-size:clamp(34px,4.8vw,64px)">Tell me about your business.</h2>
+          <p class="lede part" style="--i:2;margin-top:20px">A few quick answers and WhatsApp opens with your message written. You get a price and a plan back, not a sales call.</p>
           <form class="form part" style="--i:3" id="startform">
             <div class="field">
               <label for="f-name">Your name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Ali Raza" required>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="f-biz">Your business</label>
-              <input id="f-biz" name="biz" type="text" autocomplete="organization" placeholder="A salon in Clifton">
+              <input id="f-biz" name="biz" type="text" autocomplete="organization">
             </div>
             <div class="field">
-              <label for="f-need">What do you need?</label>
-              <textarea id="f-need" name="need" placeholder="A one page site so people can book me."></textarea>
+              <label for="f-type">What do you need?</label>
+              <select id="f-type" name="type">
+                <option>A new business website</option>
+                <option>A restaurant site with ordering</option>
+                <option>A clinic or service website</option>
+                <option>A product launch page</option>
+                <option>A redesign of my current site</option>
+                <option>A landing page</option>
+                <option>A front-end developer role</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-need">Anything else</label>
+              <textarea id="f-need" name="need"></textarea>
             </div>
             <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
-            <p class="micro">This opens WhatsApp with your message already written. Nothing is saved on this page.</p>
+            <p class="micro">This opens WhatsApp with your message already written. Nothing is stored on this page.</p>
           </form>
         </div>
         <div class="contactcard part" style="--i:4">
-          <div class="row">
-            <span>WhatsApp</span>
-            <a href="https://wa.me/923139216332" target="_blank" rel="noopener">+92 313 9216332</a>
-          </div>
-          <div class="row">
-            <span>Email</span>
-            <a href="mailto:abdulwasayshaikh456@gmail.com">abdulwasayshaikh456@gmail.com</a>
-          </div>
-          <div class="row">
-            <span>Based in</span>
-            <a href="#about">Karachi, Pakistan</a>
-          </div>
-          <div class="row">
-            <span>Usual reply</span>
-            <a href="https://wa.me/923139216332" target="_blank" rel="noopener">Within a few hours</a>
-          </div>
+          <div class="row"><span>WhatsApp</span><a href="https://wa.me/923139216332" target="_blank" rel="noopener">+92 313 9216332</a></div>
+          <div class="row"><span>Email</span><a href="mailto:abdulwasayshaikh456@gmail.com">abdulwasayshaikh456@gmail.com</a></div>
+          <div class="row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/abdul-wasay-shaikh-dev" target="_blank" rel="noopener">abdul-wasay-shaikh-dev</a></div>
+          <div class="row"><span>Based in</span><p>Karachi, working worldwide</p></div>
+          <div class="row"><span>Hiring?</span><p>Open to front-end roles, remote or Karachi</p></div>
         </div>
       </div>
     </div>
@@ -788,29 +658,27 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <div class="foot">
       <div>
         <p class="name">Abdul Wasay Shaikh</p>
-        <p>Web designer and developer, Karachi</p>
+        <p>Web designer &amp; developer, Karachi</p>
       </div>
       <div class="links">
         <a href="https://wa.me/923139216332" target="_blank" rel="noopener">WhatsApp</a>
         <a href="mailto:abdulwasayshaikh456@gmail.com">Email</a>
-        <a href="#work">Work</a>
-        <a href="#start">Start</a>
+        <a href="https://www.linkedin.com/in/abdul-wasay-shaikh-dev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/AbdulWasayShaikh" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
-    <p class="disclose">The hero video and the process images on this page were generated with AI. The websites in the work section are real, and I built them. 2026</p>
+    <p class="disclose">The hero video on this page was generated with AI. Every site in the work section is live and was designed and built by me. © 2026</p>
   </div>
 </footer>
 
 <script>
 (function(){
 'use strict';
-
-/* ---------------------------------------------------------------- helpers */
 var clamp=function(v,lo,hi){return Math.min(hi,Math.max(lo,v));};
 var smoothstep=function(p,e0,e1){var t=clamp((p-e0)/(e1-e0),0,1);return t*t*(3-2*t);};
 function rng(seed){var s=seed>>>0;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296;};}
 
-/* ---------------------------------------------------------------- split text */
+/* split text */
 var rand=rng(20260825);
 function split(el){
   var mode=el.getAttribute('data-split');
@@ -842,7 +710,7 @@ function split(el){
 }
 [].forEach.call(document.querySelectorAll('[data-split]'),split);
 
-/* ---------------------------------------------------------------- hero scrub */
+/* hero scrub */
 var hero=document.querySelector('.hero');
 var stage=document.querySelector('.stage');
 var video=document.getElementById('hero');
@@ -855,8 +723,7 @@ var bands=[].map.call(document.querySelectorAll('.band'),function(el){
   var r=(el.getAttribute('data-band')||'0,1').split(',');
   var ramp=parseFloat(el.getAttribute('data-ramp'));
   var a=parseFloat(r[0]),b=parseFloat(r[1]);
-  return {el:el,a:a,b:b,ramp:isNaN(ramp)?Math.min(0.025,(b-a)*0.35):ramp,op:-1,k:-1,
-          first:a<=0.0001,last:b>=0.9999};
+  return {el:el,a:a,b:b,ramp:isNaN(ramp)?Math.min(0.025,(b-a)*0.35):ramp,op:-1,k:-1,first:a<=0.0001,last:b>=0.9999};
 });
 
 var target=0,shown=0,rafId=null,lastTick=0,heroOnScreen=true;
@@ -876,9 +743,7 @@ video.addEventListener('seeked',function(){
   seekBusy=false;
   if(pendingTime!==null){var t=pendingTime;pendingTime=null;requestSeek(t);}
 });
-video.addEventListener('error',function(){
-  seekBusy=false;pendingTime=null;failVideo();
-});
+video.addEventListener('error',function(){seekBusy=false;pendingTime=null;failVideo();});
 
 function updateCaptions(p){
   for(var i=0;i<bands.length;i++){
@@ -889,26 +754,18 @@ function updateCaptions(p){
     var op=inRamp*outRamp;
     var k=clamp((p-a)/bd.ramp,0,1);
     if(bd.first)k=Math.max(k,loadK);
-    if(Math.abs(op-bd.op)>0.004){bd.op=op;bd.el.style.opacity=op.toFixed(3);}
+    if(Math.abs(op-bd.op)>0.004){bd.op=op;bd.el.style.opacity=op.toFixed(3);bd.el.style.pointerEvents=op>0.5?'':'none';}
     if(Math.abs(k-bd.k)>0.008){bd.k=k;bd.el.style.setProperty('--k',k.toFixed(3));}
   }
 }
-
 function tick(now){
   var dt=Math.min(100,now-(lastTick||now));
   lastTick=now;
-  var k=0.16;
-  shown+=(target-shown)*(1-Math.pow(1-k,dt/16.667));
+  shown+=(target-shown)*(1-Math.pow(1-0.16,dt/16.667));
   var loadDone=true;
-  if(loadStart){
-    loadK=clamp((now-loadStart)/900,0,1);
-    loadDone=loadK>=1;
-  }
-  if(Math.abs(target-shown)<0.0005&&loadDone){
-    shown=target;rafId=null;lastTick=0;
-  }else{
-    rafId=requestAnimationFrame(tick);
-  }
+  if(loadStart){loadK=clamp((now-loadStart)/900,0,1);loadDone=loadK>=1;}
+  if(Math.abs(target-shown)<0.0005&&loadDone){shown=target;rafId=null;lastTick=0;}
+  else{rafId=requestAnimationFrame(tick);}
   if(video.duration)requestSeek(shown*video.duration);
   updateCaptions(shown);
 }
@@ -916,7 +773,6 @@ function onScroll(){
   target=heroProgress();
   if(rafId===null&&heroOnScreen)rafId=requestAnimationFrame(tick);
 }
-
 function failVideo(){
   if(ring&&ring.parentNode){ring.style.display='none';}
   stage.classList.add('video-failed');
@@ -941,10 +797,7 @@ function loadHeroBlob(){
         chunks.push(r.value);got+=r.value.length;
         var frac=Math.min(1,got/total);
         var now=performance.now();
-        if(now-lastRing>100||frac===1){
-          lastRing=now;
-          ring.style.setProperty('--ld',Math.round(126*(1-frac)));
-        }
+        if(now-lastRing>100||frac===1){lastRing=now;ring.style.setProperty('--ld',Math.round(126*(1-frac)));}
         return pump();
       });
     }
@@ -986,7 +839,6 @@ function enableScrub(){
   initHeroOnce();
   window.addEventListener('scroll',onScroll,{passive:true});
   bands.forEach(function(b){b.op=-1;b.k=-1;});
-  unpinFinalStates();
   updateCaptions(heroProgress());
   onScroll();
 }
@@ -999,15 +851,13 @@ function applyHeroMode(){
   var gated=GATES.some(function(q){return matchMedia(q).matches;});
   if(gated)disableScrub();else enableScrub();
 }
-var MQLS=GATES.map(function(q){return matchMedia(q);});
-MQLS.forEach(function(m){m.addEventListener('change',applyHeroMode);});
+GATES.map(function(q){return matchMedia(q);}).forEach(function(m){m.addEventListener('change',applyHeroMode);});
 
 if('IntersectionObserver' in window){
   new IntersectionObserver(function(es){
     var was=heroOnScreen;
     heroOnScreen=es[0].isIntersecting;
     if(heroOnScreen&&!was&&scrubOn){
-      /* an anchor jump can land here with stale band values: snap instead of easing from them */
       target=shown=heroProgress();
       updateCaptions(shown);
       if(video.duration)requestSeek(shown*video.duration);
@@ -1017,16 +867,8 @@ if('IntersectionObserver' in window){
 }
 applyHeroMode();
 
-/* an image that never arrives leaves its wireframe standing, on purpose */
-[].forEach.call(document.querySelectorAll('.res img'),function(img){
-  img.addEventListener('error',function(){
-    img.closest('.res').classList.add('hold-open');
-    img.style.display='none';
-  });
-});
-
-/* ---------------------------------------------------------------- entrances */
-var revealed=[];
+/* entrances */
+var revealEls=[].slice.call(document.querySelectorAll('.reveal'));
 if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
@@ -1035,95 +877,34 @@ if('IntersectionObserver' in window){
       io.unobserve(e.target);
       setTimeout(function(){e.target.classList.add('done');},1600);
     });
-  },{rootMargin:'0px 0px -12% 0px',threshold:0.12});
-  [].forEach.call(document.querySelectorAll('.reveal'),function(el){io.observe(el);revealed.push(el);});
+  },{rootMargin:'0px 0px -10% 0px',threshold:0.08});
+  revealEls.forEach(function(el){io.observe(el);});
 }else{
-  [].forEach.call(document.querySelectorAll('.reveal'),function(el){el.classList.add('on','done');});
+  revealEls.forEach(function(el){el.classList.add('on','done');});
 }
 
-/* ---------------------------------------------------------------- hold to finish */
-var holdBtn=document.getElementById('holdbtn');
-var holdWrap=document.querySelector('.holdwrap');
-var mock=document.querySelector('.mock');
-var hold=0,holding=false,holdRaf=null,holdLast=0,finished=false;
-function setHold(v){
-  hold=clamp(v,0,1);
-  holdBtn.style.setProperty('--hold',hold.toFixed(3));
-  mock.style.setProperty('--hold',hold.toFixed(3));
-  if(hold>=1&&!finished){
-    finished=true;
-    holdWrap.classList.add('finished');
-    holdBtn.querySelector('span').textContent='Finished';
-  }
-}
-function holdTick(now){
-  var dt=Math.min(64,now-(holdLast||now));holdLast=now;
-  var next=hold+(holding?dt/1400:-dt/900);
-  setHold(next);
-  if((holding&&hold<1)||(!holding&&hold>0)){
-    holdRaf=requestAnimationFrame(holdTick);
-  }else{holdRaf=null;holdLast=0;}
-}
-function startHold(e){
-  if(e&&e.cancelable)e.preventDefault();
-  if(finished)return;
-  holding=true;if(holdRaf===null)holdRaf=requestAnimationFrame(holdTick);
-}
-function endHold(){
-  holding=false;if(holdRaf===null&&hold>0)holdRaf=requestAnimationFrame(holdTick);
-}
-if(holdBtn){
-  holdBtn.addEventListener('pointerdown',startHold);
-  window.addEventListener('pointerup',endHold);
-  window.addEventListener('pointercancel',endHold);
-  holdBtn.addEventListener('keydown',function(e){
-    if(e.key===' '||e.key==='Enter'){e.preventDefault();startHold();}
-  });
-  holdBtn.addEventListener('keyup',endHold);
-}
-
-/* ---------------------------------------------------------------- the form */
+/* the form */
 var form=document.getElementById('startform');
 if(form){
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var name=(document.getElementById('f-name').value||'').trim();
-    var biz=(document.getElementById('f-biz').value||'').trim();
-    var need=(document.getElementById('f-need').value||'').trim();
-    var msg='Hi Wasay. I am '+(name||'someone')+'.';
-    if(biz)msg+=' My business is '+biz+'.';
-    if(need)msg+=' '+need;
-    if(!biz&&!need)msg+=' I want to talk about a website.';
+    var v=function(id){return (document.getElementById(id).value||'').trim();};
+    var msg='Hi Wasay. I am '+(v('f-name')||'someone')+'.';
+    if(v('f-biz'))msg+=' My business is '+v('f-biz')+'.';
+    msg+=' I need: '+v('f-type')+'.';
+    if(v('f-need'))msg+=' '+v('f-need');
     window.open('https://wa.me/923139216332?text='+encodeURIComponent(msg),'_blank','noopener');
   });
 }
 
-/* ---------------------------------------------------------------- reduced motion, live */
-function pinToFinalStates(){
-  revealed.forEach(function(el){el.classList.add('on','done');});
-  if(!finished&&holdBtn){setHold(1);}
-}
-function unpinFinalStates(){/* nothing pinned that the scrub owns; captions recompute on arm */}
 matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',function(e){
-  if(e.matches){pinToFinalStates();}
+  if(e.matches){revealEls.forEach(function(el){el.classList.add('on','done');});}
   else{applyHeroMode();}
 });
-if(matchMedia('(prefers-reduced-motion: reduce)').matches)pinToFinalStates();
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)revealEls.forEach(function(el){el.classList.add('on','done');});
 
-/* ---------------------------------------------------------------- pause when hidden */
-document.addEventListener('visibilitychange',function(){
-  document.body.classList.toggle('paused',document.hidden);
-});
-
-/* one living element per section only while it is on screen */
-if('IntersectionObserver' in window){
-  var live=new IntersectionObserver(function(es){
-    es.forEach(function(e){e.target.classList.toggle('on-screen',e.isIntersecting);});
-  },{threshold:0.05});
-  [].forEach.call(document.querySelectorAll('.blk'),function(el){live.observe(el);});
-}
+document.addEventListener('visibilitychange',function(){document.body.classList.toggle('paused',document.hidden);});
 })();
 </script>
 </body>
 </html>
-<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="c392cf95-ecfd-4b91-9e9f-230ee5f60909" data-app-host="app.netlify.com"></script>
