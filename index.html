@@ -299,6 +299,11 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);background:v
 .foot .links a:hover{color:var(--accent)}
 .disclose{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);color:var(--text-secondary);font-size:14px;max-width:80ch}
 
+/* no scripts: the scrub never runs, so fall back to the static hero */
+html:not(.js-on) .hero{height:auto}
+html:not(.js-on) .stage{display:none}
+html:not(.js-on) .static-hero{display:flex;background-image:url('assets/hero-ending.jpg')}
+
 /* ============================== the five static-hero gates ============================== */
 @media (max-width:720px),
        (orientation:portrait) and (max-width:1024px),
